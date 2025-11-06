@@ -20,7 +20,7 @@ class meetro:
         elif choice == '3':
             self.write_post()
         elif choice == '4':
-            pass
+            self.msg_friend()
         else:
             print("Exiting...")
             exit()
@@ -49,6 +49,14 @@ class meetro:
             print("Please sign in to write a post.\n")
         self.menu()
 
+    def msg_friend(self):
+        if self.loggedin == True:
+            frnd = input("Enter your friend's name/email: ")
+            msg = input("Enter your message here: ")
+            print(f"Your message to {frnd} has been sent\n")
+        else:
+            print("Please sign in to message a friend.\n")
+        self.menu()
 
 
 user1 = meetro()
