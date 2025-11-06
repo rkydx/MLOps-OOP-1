@@ -18,7 +18,7 @@ class meetro:
         elif choice == '2':
             self.signin()
         elif choice == '3':
-            pass
+            self.write_post()
         elif choice == '4':
             pass
         else:
@@ -40,6 +40,15 @@ class meetro:
         else:
             print("Invalid credentials, please try again.\n")
         self.menu()
+
+    def write_post(self):
+        if self.loggedin == True:
+            post = input("Write your post here: ")
+            print(f"You below post has been published:\n{post}\n")
+        else:
+            print("Please sign in to write a post.\n")
+        self.menu()
+
 
 
 user1 = meetro()
