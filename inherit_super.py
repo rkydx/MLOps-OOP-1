@@ -11,12 +11,13 @@ class Animal:
 # # Derived class
 class Dog(Animal):
     def __init__(self, breed):
-        super().__init__()
+        super().__init__()                                      # Call the constructor of the base class (ie parent class) to initialize inherited attributes
         self.breed = breed
 
     def speak(self):
         super().speak()                                          # Call the speak method of the base class (ie parent class)
         print(f"{self.name} barks. It is a {self.breed}.")
+        #print(f"{self.name} barks. It is a wonderful.")
 
 
 # # # Create an instance of Dog
