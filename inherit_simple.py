@@ -20,4 +20,4 @@ animal.speak()  # Output: Generic Animal makes a sound.
 
 # # # Create an instance of Dog
 dog = Dog('Buddy')
-dog.speak()  # Output: Buddy barks.         # it will override the speak method of base class if the derived class has the same method name
+dog.speak()  # Output: Buddy barks. He is very Friendly.         # it will override the speak method of base class if the derived class has the same method name
